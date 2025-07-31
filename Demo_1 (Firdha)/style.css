@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Agar propertie width & height tidak dipengaruhi oleh padding */
+}
+
+.main_nav {
+    width: 100vw;
+    background-color: #113F67;
+    display: flex; /* Merubah sifat element menjadi flex (flexible) */
+    justify-content: space-between; /* Menentukan posisi dari child element pada garis horizontal */
+    /**/
+    /* padding: 10px; */
+}
+
+.nav_menu {
+    display: flex;
+    gap: 20px; /* Hanya bisa digunakan ketika dispaly memiliki value flex */
+    align-items: center; /* Menentukan posisi dari child element pada garis vertical */
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.nav_menu li {
+    list-style: none;
+    padding: 26px 10px;
+}
+
+.nav_menu li a { /* Spasi pada selector digunakan untuk mengambil child element */
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_menu li:hover { /* pseudo class */
+    background-color: #34699A;
+}
+
+.main_nav img {
+    width: 60px;
+    margin: 10px;
+}
