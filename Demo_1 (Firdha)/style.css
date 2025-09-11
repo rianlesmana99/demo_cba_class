@@ -89,3 +89,62 @@
     rotate(deg) : 90deg, 30deg
     */
 }
+
+.card-group {
+    width: 300px;
+    background-color: #58A0C8;
+    box-shadow: 1px 1px 3px #00000068;
+    border-radius: 4px; /* Kenapa ada border radius? */
+    /* Biar ujung kotaknya ga lancip */
+    overflow: hidden; /* untuk menyembuyikan element yang melebihi ukuran dari card-group */ 
+}
+.card-group img {
+    width: 400px;
+    /* border-radius: 4px 4px 0 0; kiri-atas kanan-atas kanan-bawah kiri-bawah */
+}
+.card-group h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    /* margin: 10px; */
+    /* background-color: #FDF5AA; */
+}
+.card-group p {
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: justify;
+}
+.card-group a {
+    padding: 10px;
+    background-color: #FDF5AA;
+    color: #113F67;
+    display: inline-block;
+    margin: 10px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px #00000068;
+}
+
+.section-card {
+    padding: 50px;
+}
+
+.section-card h2 {
+    font-family: sans-serif;
+    color: #113F67;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.layout-card {
+    display: flex; /* Akan membuat child elementnya menjadi ke samping */
+    gap: 50px; /* Hanya bisa digunakan ketika kita, menggunakan display: flex / grid; */
+    justify-content: space-evenly; /* Hanya bisa digunakan ketia menggunakan display: flex; */
+    /* Memilih posisi dari child element di garis horizontal | opsi value: start, end, center, space-between, space-around, space-evenly */
+    align-items: center; /* Hanya bisa digunakan ketika menggunakan display: flex; */
+    /* Memilih posisi dari child element di garis vertical opsi value: start, center, end */
+
+}
