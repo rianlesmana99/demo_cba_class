@@ -1,3 +1,10 @@
+:root {
+    --bg: #113F67; /* Akan dianggap sebuah variable */
+    --white: #fff;
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +12,7 @@
 }
 
 .main_nav {
-    width: 100vw;
-    background-color: #113F67;
+    background-color: var(--bg); /* tempat untuk menyimpan data */
     display: flex; /* Merubah sifat element menjadi flex (flexible) */
     justify-content: space-between; /* Menentukan posisi dari child element pada garis horizontal */
     /**/
@@ -206,4 +212,133 @@
     box-shadow: 1px 1px 3px #00000080;
     width: 150px;
     text-align: center;
+}
+
+.video-section {
+    margin-top: 60px;
+    display: flex;
+    /* row, row-reverse, column, column-reverse */
+    flex-direction: column; /* Menentukan dia mau di tampilkan ke samping atau ke bawah */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.video-section h2 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #113F67;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.video-section video {
+    margin: auto;
+    width: 1200px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.youtube-section {
+    margin-top: 60px;
+    display: flex;
+    /* row, row-reverse, column, column-reverse */
+    flex-direction: column; /* Menentukan dia mau di tampilkan ke samping atau ke bawah */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.youtube-section h2 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #113F67;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.youtube-section iframe {
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.main-footer {
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: sans-serif;
+    margin-top: 50px;
+
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+}
+
+.feedback-form button {
+    color: var(--bg);
+    background-color: var(--white);
+    font-weight: bold;
+    border: none;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: all 200ms;
+}
+
+.feedback-form button:hover {
+    outline: solid 4px rgba(0, 183, 255, 0.399);
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.feedback-form input {
+    padding: 5px;
+    transition: all 200ms;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.feedback-form input:focus {
+    outline: solid 4px rgba(0, 183, 255, 0.399);
+}
+
+.feedback-form select {
+    padding: 5px;
+    transition: all 200ms;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.feedback-form select:focus {
+    outline: solid 4px rgba(0, 183, 255, 0.399);
+}
+
+.feedback-form textarea {
+    padding: 5px;
+    transition: all 200ms;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.feedback-form textarea:focus {
+    outline: solid 4px rgba(0, 183, 255, 0.399);
+}
+
+.copytright {
+    text-align: center;
+    padding: 10px;
 }
