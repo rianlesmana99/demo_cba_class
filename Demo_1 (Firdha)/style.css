@@ -154,6 +154,7 @@
     /* Memilih posisi dari child element di garis horizontal | opsi value: start, end, center, space-between, space-around, space-evenly */
     align-items: center; /* Hanya bisa digunakan ketika menggunakan display: flex; */
     /* Memilih posisi dari child element di garis vertical opsi value: start, center, end */
+    /* flex-direction: column; */
 }
 
 .banner-section {
@@ -342,3 +343,89 @@
     text-align: center;
     padding: 10px;
 }
+
+.footer {
+    width: 100%;
+    background-color: #113F67;
+    margin-top: top;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+.button {
+    width: 50px;
+    display: none;
+}
+
+.button a {
+    color: #fff;
+}
+
+/* Breakpoint */
+/* 
+    max-width: 600px -> 0 - 600px : pastiin css utama kita di set untuk desktop/laptop
+    min-width: 600px; -> 600px : pastiin css utama digunakan untuk membuat tampilan di handphone (mobile first)
+*/
+@media screen and (max-width: 600px) {
+    .layout-card {
+        flex-direction: column;
+    }
+
+    .banner-section {
+        width: 80%;
+    }
+
+    .banner-section img {
+        width: auto;
+        height: 600px;
+        right: 300px;
+    }
+
+    .banner-content {
+        justify-content: end;
+    }
+
+    .banner-content p {
+        width: 100%;
+    }
+
+    .main-header p {
+        width: 100%;
+    }
+
+    .main-header {
+        background-position: center;
+    }
+
+    .video-section video {
+        width: 80%;
+    }
+
+    .youtube-section iframe {
+        width: 80%;
+        height: 220px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+
+    .feedback-form {
+        width: 100%;
+    }
+    /* .card-group {
+        width: 80vw;
+    } */
+}
+
+/* ini yang paling di rekomendasikan | mobile first */
+/* @media screen and (min-width: 600px) {
+    
+} */
