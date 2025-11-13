@@ -65,3 +65,25 @@ form {
     color: #fff;
     font-weight: bold;
 }
+
+.crimson {
+    background-color: #ff89a1;
+    color: crimson;
+    border: solid 1px crimson;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.green {
+    background-color: #87ff87;
+    color: #00a900;
+    border: solid 1px #00a900;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
