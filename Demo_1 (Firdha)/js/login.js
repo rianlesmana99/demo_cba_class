@@ -47,8 +47,9 @@ const password = document.getElementById("password");
 const btn_login = document.querySelector(".login-btn");
 
 // variable untuk ilustrasi email & password yang benar
-const true_email = "admin@gmail.com";
-const true_password = "123456789";
+// const true_email = "admin@gmail.com";
+// const true_password = "123456789";
+let dataUser = JSON.parse(localStorage.getItem("user")); // Biar yang tadinya string dikembalikan ke bentuk aslinya
 
 // menambahkan event sebagai triger
 btn_login.addEventListener("click", function(event) {
@@ -57,7 +58,7 @@ btn_login.addEventListener("click", function(event) {
     // console.log(email.value);
     // conditional statement
     // <, >, <=, >=, ===, !==, &&, ||
-    if (email.value === true_email && password.value === true_password) {
+    if (email.value === dataUser.email && password.value === dataUser.password) {
         // code ... ketika perbandingannya benar
         msg.innerText = "kamu berhasil login!";
         // msg.style.background = "red";
